@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mood Journal</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <h1>🌟 Mood Journal</h1>
+
+  <div class="form">
+    <input type="date" id="dateInput">
+    <select id="moodInput">
+      <option>Happy</option>
+      <option>Sad</option>
+      <option>Stressed</option>
+      <option>Excited</option>
+    </select>
+    <button onclick="addMood()">Add Mood</button>
+  </div>
+
+  <h2>📊 Mood Trends</h2>
+  <canvas id="moodChart"></canvas>
+
+  <h2>📅 Mood History</h2>
+  <ul id="moodHistory"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
